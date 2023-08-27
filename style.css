@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* VARIABLES */
+:root {
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --c-brand-light: #6970dd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+}
+
+/* Navbar Start */
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+#logo span{
+    color: #ffa500;
+    margin-left: -10px;
+    
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    /* background: orange; */
+    color: white;
+    border: none;
+    margin-left: 10px;
+}
+/* Navbar End */
+
+/* Header */
+
+.video{
+    z-index: -1 ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* #head{
+    background-image: linear-gradient(to right, rgba(252, 252, 252, 0.292) , rgba(245, 245, 245, 0)); 
+} */
+
+/* Awesome places */
+.service {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    border: 10px;
+}
+
+.service::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--c-brand-rgb), 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: var(--transition);
+}
+
+
+ #service1:hover::after{
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+    background: url('/assest/11.jpeg');
+    background-size:cover ;
+} 
+
+#service2:hover::after {
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+    background: url('/assest/22.jpeg');
+    background-size:cover ;
+}
+
+#service3:hover::after {
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+    background: url('/assest/33.jpeg');
+    background-size:cover ;
+}
+
+#service4:hover::after {
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+    background: url('/assest/44.jpeg');
+    background-size:cover ;
+}
+
+#service5:hover::after {
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+    background: url('/assest/55.jpeg');
+    background-size:cover ;
+}
+
+#service6:hover::after {
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+    background: url('/assest/66.jpeg');
+    background-size:cover ;
+}
+
+.service:hover h5,
+.service:hover p {
+    color: white;    
+}
+
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+/* ICONBOX */
+.iconbox {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb), 0.1);
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
+}
+
+.service:hover .iconbox {
+    display: none;
+}
+
+.service a:link { text-decoration: none;
+         color: black; }
+
+
+.service a:visited { text-decoration: none;
+    color: black; }
+
+
+.service a:hover { text-decoration: none;
+    color: black; }
+
+
+.service a:active { text-decoration: none;
+    color: black; }
+
+/* Footer Start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+    text-decoration: none;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+    text-decoration: none;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+/* Footer End */
+
+ /* TEAM */
+ .containers {
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 2px solid rgb(255, 255, 255);
+}
+/*** Booking ***/
+.booking {
+    background: linear-gradient(rgba(188, 192, 201, 0.345), rgba(51, 56, 69, 0.7)), url(/assest/Booking.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Team{
+    text-align: center;
+}
+

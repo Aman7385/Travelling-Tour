@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assest/FavIcon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assest/FavIcon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assest/FavIcon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- FavIcon End -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Gloock&family=Lobster&family=Overpass:wght@100&display=swap"
+        rel="stylesheet">
+        <script src="main.js"></script>
+    <script>
+        var letters=/^[A-Za-z]+$/;
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value.match(letters);
+            if (x == "" || x == null) {
+                alert("Enter Valid FirstName");
+                return false;
+            }
+            let y = document.forms["myForm"]["lname"].value.match(letters);
+            if (y == "" || y == null) {
+                alert("Enter valid LastName");
+                return false;
+            }
+            let z = document.forms["myForm"]["email"].value;
+            if (z == "" || z == null) {
+                alert("Enter Email id");
+                return false;
+            }
+
+            let a = document.forms["myForm"]["number"].value;
+            if (a == "" || a == null || a.length < 10 || a.length < 10) {
+                alert("Enter 10 digits Phone Number");
+                return false;
+            }
+
+            let b = document.forms["myForm"]["Age"].value;
+            if (b == "" || b == null || b.length < 0 || b.length > 150) {
+                alert("Enter your Age");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="All theme-shadow">
+        <section class="contact" id="contact">
+            <h1 class="heading"><span>Sign up </span> </h1>
+            <div class="row" style="border: 1px solid black; border-top-width: 0; border-radius: 0px 0px 20px 20px;">
+                <form action="" name="myForm" onsubmit="return validateForm() ">
+                    <p><br>
+                        <b class="A" style="padding-bottom: 10px;"> Name :&nbsp;</b>
+
+                        <input type="text" placeholder=" Enter First name" class="box" name="fname" onsubmit="lettersOnlyCheck(name)">
+                        <br><br>
+                    </p>
+                    <p>
+                        <label for="lname">Last Name :</label>
+                        <input type="text" placeholder=" Enter Last name" class="box" name="lname"><br><br>
+                    </p>
+                    <p>
+                        <b>Email :</b>
+                        <input type="email" placeholder="Enter E-mail" class="box" name="email"><br><br>
+                    </p>
+                    <p>
+                        <b>Phone Number :</b>
+                        <input type="number" placeholder="Enter Phone Number" class="box" name="number" maxlength="10"
+                            size="10"><br><br>
+                    </p>
+                    <p>
+                        <b>Age :&nbsp;</b>
+                        <input type="number" placeholder="Enter your Age" class="box" name="Age" maxlength="2"
+                            size="2"><br><br>
+                    </p>
+                    <p>
+                        <b>Password :&nbsp;</b>
+                        <input type="password" placeholder="Enter your Password" class="box" id="password"><br><br>
+                    </p>
+                    <p>
+                        <b>Confirm Password :&nbsp;</b>
+                        <input type="password" id="password" placeholder="Re-enter your password" class="box"><br><br>
+                    </p>
+
+
+
+
+
+
+                    
+                        <label for="gender">Gender : 
+                        <input type="radio" id="Gender" name="gender" value="Male" >
+                        <label for="Male" >Male</label>
+                        <input type="radio" id="Gender" name="gender" value="Female">
+                        <label for="Gender">Female</label>
+                    </label>
+                </br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="Register">
+                        <input type="submit" value="Register">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </div>
+    
+
+
+
+</body>
+
+</html>   
+
+
