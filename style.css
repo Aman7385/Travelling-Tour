@@ -103,7 +103,7 @@
     height: 100%;
     background: var(--c-brand);
     z-index: -1;
-    background: url('/assest/11.jpeg');
+    background: url('assest/11.jpeg');
     background-size:cover ;
 } 
 
@@ -112,7 +112,7 @@
     height: 100%;
     background: var(--c-brand);
     z-index: -1;
-    background: url('/assest/22.jpeg');
+    background: url('assest/22.jpeg');
     background-size:cover ;
 }
 
@@ -121,7 +121,7 @@
     height: 100%;
     background: var(--c-brand);
     z-index: -1;
-    background: url('/assest/33.jpeg');
+    background: url('assest/33.jpeg');
     background-size:cover ;
 }
 
@@ -130,7 +130,7 @@
     height: 100%;
     background: var(--c-brand);
     z-index: -1;
-    background: url('/assest/44.jpeg');
+    background: url('assest/44.jpeg');
     background-size:cover ;
 }
 
@@ -139,7 +139,7 @@
     height: 100%;
     background: var(--c-brand);
     z-index: -1;
-    background: url('/assest/55.jpeg');
+    background: url('assest/55.jpeg');
     background-size:cover ;
 }
 
@@ -148,7 +148,7 @@
     height: 100%;
     background: var(--c-brand);
     z-index: -1;
-    background: url('/assest/66.jpeg');
+    background: url('assest/66.jpeg');
     background-size:cover ;
 }
 
@@ -243,7 +243,7 @@
 }
 /*** Booking ***/
 .booking {
-    background: linear-gradient(rgba(188, 192, 201, 0.345), rgba(51, 56, 69, 0.7)), url(/assest/Booking.jpg);
+    background: linear-gradient(rgba(188, 192, 201, 0.345), rgba(51, 56, 69, 0.7)), url(assest/Booking.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
