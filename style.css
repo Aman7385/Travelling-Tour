@@ -103,7 +103,7 @@
     height: 100%;
     background: var(--c-brand);
     z-index: -1;
-    background: url('assest/11-1.jpg');
+    background: url('assest/11.jpeg');
     background-size:cover ;
 } 
 
@@ -112,7 +112,7 @@
     height: 100%;
     background: var(--c-brand);
     z-index: -1;
-    background: url('assest/22-2.jpg');
+    background: url('assest/22.jpeg');
     background-size:cover ;
 }
 
@@ -121,7 +121,7 @@
     height: 100%;
     background: var(--c-brand);
     z-index: -1;
-    background: url('assest/33-3.jpeg');
+    background: url('assest/33.jpeg');
     background-size:cover ;
 }
 
@@ -130,7 +130,7 @@
     height: 100%;
     background: var(--c-brand);
     z-index: -1;
-    background: url('assest/44-4.jpeg');
+    background: url('assest/44.jpeg');
     background-size:cover ;
 }
 
@@ -139,7 +139,7 @@
     height: 100%;
     background: var(--c-brand);
     z-index: -1;
-    background: url('assest/55-5.jpeg');
+    background: url('assest/55.jpeg');
     background-size:cover ;
 }
 
@@ -148,7 +148,7 @@
     height: 100%;
     background: var(--c-brand);
     z-index: -1;
-    background: url('assest/66-6.jpeg');
+    background: url('assest/66.jpeg');
     background-size:cover ;
 }
 
